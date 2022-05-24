@@ -1,0 +1,109 @@
+.developer-experts {
+    padding: 90px 0 35px 0;
+    // .developer-experts__container
+
+    &__container {
+    }
+
+    // .developer-experts__title
+
+    &__title {
+        @include _992 {
+            padding-right: 15px;
+        }
+    }
+
+    // .developer-experts__list
+
+    &__list {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        padding-top: 30px;
+        margin: 0;
+        @include _768 {
+            padding-top: 50px;
+            margin: 0 -15px;
+        }
+        @include _992 {
+            padding-top: 68px;
+            margin: 0;
+        }
+    }
+
+    // .developer-experts__item
+
+    &__item {
+        flex: 0 1 100%;
+        padding: 15px 0;
+        @include _768 {
+            padding: 15px;
+            flex: 0 1 50%;
+        }
+        @include _992 {
+            flex: 0 1 25%;
+        }
+        
+        // .developer-experts__item--body
+
+        &--body {
+            border: 3px solid var(--dark-gray);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 36px 15px 31px 15px;
+
+            min-height: 100%;
+        }
+
+        // .developer-experts__item--avatar
+
+        &--avatar {
+        }
+
+        // .developer-experts__item--img
+
+        &--img {
+            object-fit: cover;
+            max-width: 100%;
+        }
+
+        // .developer-experts__item--name
+
+        &--name {
+            padding-top: 22px;
+            text-align: center;
+        }
+
+        // .developer-experts__item--footer
+
+        &--footer {
+            padding-top: 15px;
+            @include _768 {
+                padding-top: 35px;
+            }
+            flex: 1 1 100%;
+
+            display: flex;
+            align-items: flex-end;
+        }
+
+        // .developer-experts__item--home
+
+        &--home {
+            font-size: 1rem;
+            @include _768 {
+                font-size: 1.25rem;
+            }
+            line-height: 125%;
+            font-weight: 600;
+            text-align: center;
+            color: var(--dark-gray-2);
+        }
+    }
+}
+

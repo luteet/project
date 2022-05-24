@@ -1,0 +1,71 @@
+.smart-contract {
+    padding: 35px 0 105px 0;
+    // .smart-contract__container
+
+    &__container {
+    }
+
+    // .smart-contract__title
+
+    &__title {
+    }
+
+    // .smart-contract__form
+
+    &__form {
+        padding-top: 23px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .smart-contract__label
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+
+        padding: 14px 0;
+    }
+
+    // .smart-contract__name-input
+
+    &__name-input {
+        font-size: 1rem;
+        @include _768 {
+            font-size: 1.25rem;
+        }
+        line-height: 125%;
+        font-weight: 600;
+
+        margin-bottom: 13px;
+
+        &._required {
+            &::after {
+                content: '*';
+                color: red;
+            }
+        }
+        
+    }
+
+    // .smart-contract__input
+
+    &__input {
+        
+    }
+
+    // .smart-contract__textarea
+
+    &__textarea {
+    }
+
+    // .smart-contract__submit
+
+    &__submit {
+        margin-top: 14px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+

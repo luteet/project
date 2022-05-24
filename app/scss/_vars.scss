@@ -1,0 +1,93 @@
+
+$main_font: 'Arial';
+
+$accent: teal;
+
+$white: #FFFFFF;
+$black: #000000;
+
+$containerPadding: 15;
+
+$container: 1286 + ($containerPadding * 2);
+$containerMin: 863 + ($containerPadding * 2);
+$containerSuperMin: 612 + ($containerPadding * 2);
+$containerLarge: 1320 + ($containerPadding * 2);
+
+:root {
+    --title-font: 'Montserrat';
+    --main-font: 'Montserrat';
+    
+    --accent: #7861D4;
+    --accent-dark: #6854B8;
+
+    --orange: #EB674A;
+
+    --gradient: radial-gradient(83.99% 244.42% at 5.81% 16.01%, #7861D4 54.69%, #D46161 100%);
+    --gradient-2: linear-gradient(92.13deg, #FF502A 0%, #7861D4 100%);
+
+    --dark: #0C0C0C;
+    --dark-2: #171717;
+    --dark-opacity: rgba(12, 12, 12, 0.2);
+    --dark-gray: #1D1D1D;
+    --dark-gray-2: #4B4B4B;
+
+    --white: #FFF;
+    --black: #000;
+
+    --container-padding: 15px;
+}
+
+
+@font-face {
+    @include font-include('Montserrat', 300, swap, normal, 'Montserrat-Light');
+}
+
+@font-face {
+    @include font-include('Montserrat', 400, swap, normal, 'Montserrat-Regular');
+}
+
+@font-face {
+    @include font-include('Montserrat', 600, swap, normal, 'Montserrat-SemiBold');
+}
+
+@font-face {
+    @include font-include('Montserrat', 800, swap, normal, 'Montserrat-ExtraBold');
+}
+
+
+@font-face {
+    font-family: 'icons-font';
+    src:
+      url('icons-font.ttf?qjbbqb') format('truetype'),
+      url('icons-font.woff?qjbbqb') format('woff'),
+      url('icons-font.svg?qjbbqb#icons-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="_icon-"], [class*=" _icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons-font' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  ._icon-arrow-down::before {
+    content: "\e900";
+  }
+  ._icon-arrow-left::before {
+    content: "\e901";
+  }
+  ._icon-arrow-right::before {
+    content: "\e902";
+  }
+  

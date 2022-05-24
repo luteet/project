@@ -1,0 +1,130 @@
+.intro {
+    padding: 150px 0 80px 0;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    
+    @include _992 {
+        display: block;
+        min-height: auto;
+        padding: 265px 0 120px 0;
+    }
+    // .intro__container
+
+    &__container {
+    }
+
+    // .intro__header
+
+    &__header {
+        position: relative;
+        @include _768 {
+            &::before {
+                content: '';
+                position: absolute;
+                left: 15px; top: 50%;
+                transform: translate(0,-60%);
+                height: 80%; width: 2px;
+                background: var(--white);
+
+                display: block;
+            }
+        }
+        @include _992 {
+            &::before {
+                left: 40px;
+            }
+        }
+        &::before {
+            display: none;
+        }
+    }
+
+    // .intro__main-title
+
+    &__main-title {
+    }
+
+    // .intro__text
+
+    &__text {
+        font-size: 1rem;
+        padding: 15px 0px 0px 0px;
+        @include _768 {
+            padding: 0 50px;
+            font-size: 1.25rem;
+        }
+        @include _992 {
+            font-size: 1.5rem;
+        }
+        line-height: 133%;
+        & p {
+            padding: 7px 0;
+        }
+        
+    }
+
+    // .intro__footer
+
+    &__footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+        padding-top: 40px;
+
+        @include _768 {
+            padding-top: 92px;
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: stretch;
+        }
+
+        
+    }
+
+    // .intro__scroll-to
+
+    &__scroll-to {
+
+        color: var(--white);
+        font-size: 1.6875rem;
+
+        display: inline-block;
+        padding: 30px 15px 15px 15px;
+
+        @include _768 {
+            align-self: flex-end;
+            grid-column: 1/1; grid-row: 1/1;
+            padding: 0 30px 0 10px;
+        }
+
+        @include _992 {
+            padding: 0 30px 0 30px;
+        }
+
+        transition: color .2s ease-in-out;
+
+        &:hover {
+            color: var(--accent);
+        }    
+        // .intro__scroll-to--icon
+
+        &--icon {
+
+        }
+    }
+
+    // .intro__btn
+
+    &__btn {
+        
+        @include _768 {
+            justify-self: center;
+            align-self: center;
+            grid-column: 1/3; grid-row: 1/1;
+        }
+    }
+}
+

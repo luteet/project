@@ -1,0 +1,202 @@
+    @@include("html/_header.html")
+
+    <div class="wrapper">
+        <section class="intro">
+            <div class="intro__container _container">
+                <div class="intro__header _txt-center wow animate__fadeInUp">
+                    <div class="intro__header--container _container _min">
+                        <h1 class="intro__main-title _main-title">
+                            Smart Contract Development
+                        </h1>
+                        <div class="intro__text">
+                            <p>
+                                Full-stack blockchain development services including smart contract development and consulting for both public and private blockchain.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro__footer wow animate__fadeInUp" data-wow-delay="0.2s">
+                    <a href="#" class="intro__scroll-to">
+                        <i class="intro__scroll-to--icon _icon-arrow-down"></i>
+                    </a>
+                    <a href="#" class="intro__btn _btn">
+                        Get Now
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="about-us__bg wow animate__fadeInLeft"></div>
+            <div class="about-us__container _container">
+                <div class="about-us__info wow animate__fadeInLeft" data-wow-delay="0.2s">
+                    <h2 class="about-us__title _section-title">
+                        The QuickContract
+                    </h2>
+                    <div class="about-us__text">
+                        <p>
+                            A smart contract is an agreement between two or more parties that is stored on a blockchain, such as Ethereum or EOS. Every such contract has a predefined set of rules and conditions and is automatically executed when those conditions are met. These contracts are guaranteed by the consensus of the whole blockchain network. They cannot be altered by anyone unless the whole network approves of the change. This makes smart contracts one of the safest and most powerful tools for creating agreements between different parties. Here’s how your business can benefit from smart contract development.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-us__logo wow animate__fadeIn" data-wow-delay="0.6s">
+                    <img src="img/logo.svg" width="248" height="248" alt="" class="about-us__logo--img">
+                </div>
+            </div>
+        </section>
+        <section class="developer-experts">
+            <div class="developer-experts__container _container">
+                <h2 class="developer-experts__title _section-title _txt-right wow animate__fadeInRight">
+                    Our Developer Experts
+                </h2>
+                <ul class="developer-experts__list">
+                    @@loop("html/main-page/_developer-experts-item.html", [
+                        {"avatar": '1', "name": 'Entony Calrsen', "home": 'San Francisco, CA, USA', "delay": '0.2s'},
+                        {"avatar": '2', "name": 'Javier Salomon', "home": 'Argentina', "delay": '0.4s'},
+                        {"avatar": '3', "name": "Edwin Liava'a", "home": 'Australia', "delay": '0.6s'},
+                        {"avatar": '4', "name": 'Rafael Pires <br> de Carvalho', "home": 'Campinas, Brazil', "delay": '0.8s'},
+                    ])
+                </ul>
+            </div>
+        </section>
+        <section class="how-works">
+            <div class="how-works__container _container">
+                <h2 class="how-works__title _section-title wow animate__fadeInLeft">
+                    How it works?
+                </h2>
+            </div>
+            <div class="how-works__content">
+                <div class="how-works__content--container _container">
+                    <div class="how-works__row">
+                        <div class="how-works__col _start _min">
+                            <div class="how-works__step wow animate__fadeInLeft" data-wow-delay="0.2s">
+                                <div class="how-works__step--text">
+                                    <p>
+                                        You describe the functions of the contract
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="how-works__col _end _large">
+                            <div class="how-works__item wow animate__fadeIn" data-wow-delay="1s">
+                                <div class="how-works__item--arrow">
+                                    <i class="how-works__item--icon _icon-arrow-right"></i>
+                                </div>
+                                <div class="how-works__item--text">
+                                    <p>
+                                        We agree and clarify the details
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="how-works__item wow animate__fadeIn" data-wow-delay="1s">
+                                <div class="how-works__item--arrow _full">
+                                    <i class="how-works__item--icon _icon-arrow-down"></i>
+                                </div>
+                            </div>
+                            <div class="how-works__item wow animate__fadeIn" data-wow-delay="1s">
+                                <div class="how-works__item--text _full">
+                                    <p>
+                                        We create an algorithm for <br>
+                                        your contract and you check it
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="how-works__item wow animate__fadeIn" data-wow-delay="1s">
+                                <div class="how-works__item--arrow _full">
+                                    <i class="how-works__item--icon _icon-arrow-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="how-works__row _rev">
+                        <div class="how-works__col _start _large">
+                            <div class="how-works__item _rev wow animate__fadeIn" data-wow-delay="1s">
+                                <div class="how-works__item--text">
+                                    <p>
+                                        We are working on creating a contract
+                                    </p>
+                                </div>
+                                <div class="how-works__item--arrow">
+                                    <i class="how-works__item--icon _icon-arrow-left"></i>
+                                </div>
+                            </div>
+                            <div class="how-works__item wow animate__fadeIn" data-wow-delay="1s">
+                                <div class="how-works__item--arrow _full">
+                                    <i class="how-works__item--icon _icon-arrow-down"></i>
+                                </div>
+                            </div>
+                            <div class="how-works__item wow animate__fadeIn" data-wow-delay="1s">
+                                <div class="how-works__item--text _full">
+                                    <p>
+                                        We demonstrate to you on a test <br>
+                                        network platform (Ropsten, ...)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="how-works__item wow animate__fadeIn" data-wow-delay="1s">
+                                <div class="how-works__item--arrow _full">
+                                    <i class="how-works__item--icon _icon-arrow-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="how-works__col _end _min">
+                            <div class="how-works__step _alt wow animate__fadeInRight" data-wow-delay="0.2s">
+                                <div class="how-works__step--text">
+                                    <p>
+                                        You make an advance payment
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="how-works__row wow animate__fadeIn" data-wow-delay="1s">
+                    <div class="how-works__row--container _container _large">
+                        <div class="how-works__step _full">
+                            <div class="how-works__step--text">
+                                <p>
+                                    You make the second part of the payment
+                                    and receive a contract in text format
+                                </p>
+                                <strong class="how-works__step--accent-text">
+                                    It is also possible to make a turnkey token
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="smart-contract wow animate__fadeInUp">
+            <div class="smart-contract__container _container _super-min">
+                <h2 class="smart-contract__title _section-title _txt-center">
+                    Let's create a smart contract
+                </h2>
+                <form action="#" class="smart-contract__form">
+                    <label class="smart-contract__label">
+                        <span class="smart-contract__name-input _required">
+                            Your name
+                        </span>
+                        <input type="text" name="name" required placeholder="Name" class="smart-contract__input _input">
+                    </label>
+                    <label class="smart-contract__label">
+                        <span class="smart-contract__name-input _required">
+                            Telegram
+                        </span>
+                        <input type="text" name="telegram" required placeholder="@" class="smart-contract__input _input">
+                    </label>
+                    <label class="smart-contract__label">
+                        <span class="smart-contract__name-input _required">
+                            Details
+                        </span>
+                        <textarea name="details" rows="7" required class="smart-contract__textarea _textarea"></textarea>
+                    </label>
+                    <button class="smart-contract__submit _btn" type="submit">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    @@include("html/_footer.html")

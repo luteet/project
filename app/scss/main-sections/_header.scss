@@ -1,0 +1,215 @@
+.header {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+
+    padding: 10px 0;
+    @include _992 {
+        padding: 30px 0;
+    }
+
+    //padding-right: var(--popup-padding) !important;
+
+    /* transform: translate(0, var(--pos)); */
+
+    opacity: 0;
+    &._loaded {
+        opacity: 1;
+    }
+    transition: opacity .2s ease-in-out;
+
+    z-index: 99;
+
+    &._active {
+        position: fixed;
+        background-color: var(--dark-2);
+
+        @include _992 {
+            padding: 10px 0;
+        }
+
+        box-shadow: 0 0 5px 1px rgba(#000000, 0.15);
+    }
+
+    &__logo {
+        position: relative;
+        z-index: 100;
+
+        @include _992 {
+            
+            padding-left: 15px;
+        }
+
+        &--img {
+            width: 40px;
+            @include _992 {
+                width: 55px;
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__nav {
+        position: absolute;
+        left: 0; top: 0;
+        width: 100%; height: 100vh;
+
+        background-color: var(--dark);
+
+        overflow: auto;
+
+        opacity: 0; visibility: hidden;
+
+        &._active {
+            opacity: 1; visibility: visible;
+        }
+
+        transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
+
+        @include _992 {
+            position: static;
+            width: auto; height: auto;
+            background-color: transparent;
+            padding: 0;
+            overflow: visible;
+
+            opacity: 1; visibility: visible;
+        }
+
+        &--body {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            min-height: 100%; padding: 75px 0;
+
+            position: relative;
+            &::before {
+                content: '';
+                position: fixed;
+                left: 0; top: 0;
+                width: 100%; height: 75px;
+                background: var(--dark);
+                z-index: 2;
+            }
+
+            @include _992 {
+                padding: 0;
+                flex-direction: row;
+                justify-content: stretch;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        &--list {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+
+            height: 100%; width: 100%;
+
+            @include _992 {
+                align-items: stretch;
+                flex-direction: row;
+
+                padding-right: 75px;
+                width: auto;
+            }
+        }
+
+        &--item {
+            width: 100%;
+            text-align: center;
+            
+            @include _992 {
+                width: auto;
+            }
+
+        }
+
+        &--link {
+            width: 100%;
+            color: var(--white);
+            font-weight: 600;
+            font-size: 1.5rem;
+
+            padding: 30px 15px;
+            @include _992 {
+                font-size: 1.25rem;
+
+                padding: 15px;
+            }
+
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 50%; bottom: 15px;
+                @include _992 {
+                    bottom: 0;
+                }
+                transform: translate(-50%,0);
+                width: 0; height: 2px;
+
+                background: var(--white);
+
+                transition: width .2s ease-in-out;
+            }
+
+            &:hover, &._current {
+                &::before {
+                    width: 50px;
+                    @include _992 {
+                        width: 23%;
+                    }
+                }
+            }
+
+            @include _992 {
+                width: auto;
+            }
+
+        }
+
+        &--social-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &--social-item {
+
+        }
+
+        &--social-link {
+            display: inline-block;
+            padding: 15px;
+
+            & svg, svg path {
+                fill: var(--white);
+                transition: fill .2s ease-in-out;
+            }
+
+            & svg {
+                margin-top: 5px;
+            }
+
+            &:hover svg, &:hover svg path {
+                fill: var(--accent);
+            }
+        }
+    }
+}
