@@ -34,7 +34,7 @@ body.addEventListener('click', function (event) {
     
       window.scroll({
         left: 0,
-        top: (section) ? section.offsetTop : 0,
+        top: (section) ? section.offsetTop - header.offsetHeight : 0,
         behavior: 'smooth'
       })
     
