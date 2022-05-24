@@ -1129,6 +1129,7 @@ body._popup-active {
 .header._active {
   position: fixed;
   background-color: var(--dark-2);
+  padding: 0;
   -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
 }

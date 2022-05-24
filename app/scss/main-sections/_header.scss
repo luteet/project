@@ -24,6 +24,7 @@
         position: fixed;
         background-color: var(--dark-2);
 
+        padding: 0;
         @include _992 {
             padding: 10px 0;
         }
